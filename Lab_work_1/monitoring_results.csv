@@ -29,3 +29,5 @@ Date,Time,Source,Top_5_Terms,Frequencies,Total_Freq_Sum,Comment
 2026-02-12,Morning: 08:49:18,CNBC,"stocks, earnings, market, jobs, trump","8, 4, 4, 4, 3",23,
 2026-02-12,Day: 16:40:47,BBC,"shooting, milancortina, canada, winter, olympics","7, 7, 5, 5, 5",29,
 2026-02-12,Day: 16:40:47,CNBC,"trump, mcdonalds, tariffs, earnings, stocks","3, 3, 3, 3, 3",15,
+2026-02-12,Evening: 19:45:17,BBC,"winter, olympics, immigration, former, epstein","6, 6, 5, 5, 5",27,
+2026-02-12,Evening: 19:45:17,CNBC,"stock, sales, mcdonalds, blocks, market","4, 3, 3, 2, 2",14,
