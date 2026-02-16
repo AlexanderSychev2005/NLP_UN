@@ -167,7 +167,7 @@ class NewsParser:
 
             next_week_days = np.arange(x.max() + 1, x.max() + 8)
             predictions = k * next_week_days + b
-            print("Predictions for next week:", predictions)
+            print("Predictions for next week:", np.round(predictions, 2))
 
             # Visualization
             plt.figure(figsize=(10, 6))
@@ -232,5 +232,5 @@ class NewsParser:
 
 if __name__ == "__main__":
     parser = NewsParser()
-    parser.monitor()
+    # parser.monitor()
     parser.predict_trend()
