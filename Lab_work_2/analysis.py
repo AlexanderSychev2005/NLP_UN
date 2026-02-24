@@ -71,27 +71,22 @@ def spacy_lemma(text):
 all_text_bbc = " ".join(dataset[dataset["Source"] == "BBC"]["Raw_Text"].dropna())
 all_text_cnbc = " ".join(dataset[dataset["Source"] == "CNBC"]["Raw_Text"].dropna())
 
-print("BBC news analysis: ")
+print("\n" + "=" * 20)
+print("BBC News Analysis:")
+print("=" * 20)
 
-# NLTK results
 bbc_stems = nltk_stemming(all_text_bbc)
-top_nltk = Counter(bbc_stems).most_common(5)
+print(f"Top-5 (NLTK Stemming): {Counter(bbc_stems).most_common(5)}")
 
-print(f"Top-5 (NLTK Stemming): {top_nltk}")
-
-# Spacy results
 bbc_lemmas = spacy_lemma(all_text_bbc)
-top_spacy = Counter(bbc_lemmas).most_common(5)
-print(f"Top-5 (spaCy Lemmatization): {top_spacy}")
+print(f"Top-5 (spaCy Lemmatization): {Counter(bbc_lemmas).most_common(5)}")
 
+print("\n" + "=" * 20)
+print("CNBC News Analysis:")
+print("=" * 20)
 
-# BBC results
-bbc_stems = nltk_stemming(all_text_cnbc)
-top_nltk = Counter(bbc_stems).most_common(5)
+cnbc_stems = nltk_stemming(all_text_cnbc)
+print(f"Top-5 (NLTK Stemming): {Counter(cnbc_stems).most_common(5)}")
 
-print(f"Top-5 (NLTK Stemming): {top_nltk}")
-
-# Spacy results
-bbc_lemmas = spacy_lemma(all_text_cnbc)
-top_spacy = Counter(bbc_lemmas).most_common(5)
-print(f"Top-5 (spaCy Lemmatization): {top_spacy}")
+cnbc_lemmas = spacy_lemma(all_text_cnbc)
+print(f"Top-5 (spaCy Lemmatization): {Counter(cnbc_lemmas).most_common(5)}")
