@@ -236,7 +236,7 @@ if __name__ == "__main__":
     plt.show()
 
     # Level 3 - Unsupervised Learning (K-Means Clustering)
-    print("Level 3 -Clustering (Unsupervised Learning)")
+    print("Level 3 - Clustering (Unsupervised Learning)")
 
     # Re-vectorize specifically for clustering using our custom stop words
     custom_vectorizer = TfidfVectorizer(stop_words=list(parser.stop_words))
