@@ -1,0 +1,39 @@
+[project]
+name = "lab-work-5"
+version = "0.1.0"
+description = "Lab Work 5 NLP"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "Alex", email = "alexandersychev2005@gmail.com" },
+]
+
+dependencies = [
+    "torch==2.10.0+cu126",
+    "torchvision==0.25.0+cu126",
+    "torchaudio==2.10.0+cu126",
+    "requests",
+    "beautifulsoup4",
+    "nltk",
+    "numpy<2.0.0",
+    "pandas",
+    "spacy",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "textblob",
+    "transformers",
+    "en-core-web-sm",
+]
+
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu126" }
+torchvision = { index = "pytorch-cu126" }
+torchaudio = { index = "pytorch-cu126" }
+en-core-web-sm = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl" }
